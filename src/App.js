@@ -3,18 +3,16 @@ import logo from './logo.svg';
 import './App.css';
 import Lex from './lexChat';
 
-Lex.botName = 'order-flowers';
-Lex.IdentityPoolId = 'asdasdasdasd';
-Lex.placeholder = 'write someting to start';
-Lex.backgroundColor = 'white';
-Lex.height = 430;
-Lex.headerText = 'VIDI STO HEADER';
-
 class App extends Component {
   constructor(){
     super();
     this.state = {
-      onePromonState : "asdasdas",
+      botName : 'TestBotTr',
+      IdentityPoolId : 'us-east-1:45f25176-0f92-4b5d-91ea-907eef85670c',
+      placeholder: 'write something',
+      backgroundColor: 'white',
+      height: 500,
+      headerText: 'header text'
     }
 
   }
@@ -22,17 +20,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Lex />>
+          <Lex  {...this.state} />
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
         </header>
-       
-         {/*<h1>Amazon Lex - react</h1>
-	      <div id="conversation"></div>
-	        <form id="chatform" >
-		        <input type="text" id="wisdom" size="80" value="" placeholder="I need a hotel room"></input>
-	        </form> */}
       </div>
     );
   }

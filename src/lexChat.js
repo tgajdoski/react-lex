@@ -95,7 +95,7 @@ class LexChat extends React.Component {
   }
 
   showResponse(lexResponse) {
-
+    console.log(lexResponse);
     var conversationDiv = document.getElementById('conversation');
     var responsePara = document.createElement("P");
     responsePara.className = 'lexResponse';
