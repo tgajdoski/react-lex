@@ -98,10 +98,19 @@ class LexChat extends React.Component {
     console.log(lexResponse);
     var conversationDiv = document.getElementById('conversation');
     var responsePara = document.createElement("P");
-    responsePara.className = 'lexResponse';
+   
     if (lexResponse.message) {
+      if (lexResponse.responseCard){
+        responsePara.className = 'responseCard';
+        console.log(lexResponse.responseCard.genericAttachments);
+        responsePara.appendChild(document.createTextNode((lexResponse.responseCard.genericAttachments[0].title)));
+        responsePara.appendChild(document.createElement('br'));
+      }
+      else {
+        responsePara.className = 'lexResponse';
       responsePara.appendChild(document.createTextNode(lexResponse.message));
       responsePara.appendChild(document.createElement('br'));
+      }
     }
     if (lexResponse.dialogState === 'ReadyForFulfillment') {
       responsePara.appendChild(document.createTextNode(

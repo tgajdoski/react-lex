@@ -61,6 +61,21 @@ p.lexResponse {
 	font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p.responseCard {
+	margin: 10px;
+	padding: 8px 14px 8px 14px;
+	border-radius: 4px;
+	text-align: right;
+	min-width: 50%;
+	max-width: 85%;
+	float: right;
+	color: #FFFFFF;
+	background-color: #1289fe;
+	font-style: italic;
+	border-radius: 1em;
+	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 p.lexError {
 	margin: px;
 	padding: 4px 10px 4px 10px;
