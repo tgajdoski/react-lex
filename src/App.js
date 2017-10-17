@@ -8,7 +8,7 @@ Lex.IdentityPoolId = 'asdasdasdasd';
 Lex.placeholder = 'write someting to start';
 Lex.backgroundColor = 'white';
 Lex.height = 430;
-Lex.headerText = 'VIDI STO HEADER IMAME';
+Lex.headerText = 'VIDI STO HEADER';
 
 class App extends Component {
   constructor(){
